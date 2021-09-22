@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  <category>
+      <pattern>Hello</pattern>
+      <template><random>
+          <li>Hello there👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Wssssuuuhhhhh. What can I do for you? Im here to help you with:</li>
+          <li>Welcome to SparrowBot. What can I do for you? Im here to help you with:</li>
+          <li>Good to hear from you! What can I do for you? Im here to help you with:</li>
+          <li>Hello👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome to Sparrrowbot. What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome aboard mi ship! What can I do for you? Im here to help you with:</li>
+      </random>
+      <button>
+              <text>Booking a session</text>
+              <postback>SHOOT</postback>
+          </button>
+          <button>
+              <text>Visit my instagram profile</text>
+              <url>https://www.instagram.com/_cavins/</url>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Hi</pattern>
+      <template><random>
+          <li>Hello there👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Wssssuuuhhhhh. What can I do for you? Im here to help you with:</li>
+          <li>Welcome to SparrowBot. What can I do for you? Im here to help you with:</li>
+          <li>Good to hear from you! What can I do for you? Im here to help you with:</li>
+          <li>Hello👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome to Sparrrowbot. What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome aboard mi ship! What can I do for you? Im here to help you with:</li>
+      </random>
+      <button>
+            <text>Booking a session</text>
+              <postback>SHOOT</postback>
+          </button>
+          <button>
+              <text>Visit my instagram profile</text>
+              <url>https://www.instagram.com/_cavins/</url>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Morning</pattern>
+      <template>
+          <random>
+          <li>Hello there👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Wssssuuuhhhhh. What can I do for you? Im here to help you with:</li>
+          <li>Welcome to SparrowBot. What can I do for you? Im here to help you with:</li>
+          <li>Good to hear from you! What can I do for you? Im here to help you with:</li>
+          <li>Hello👋 What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome to Sparrrowbot. What can I do for you? Im here to help you with:</li>
+          <li>👋Hi! Welcome aboard mi ship! What can I do for you? Im here to help you with:</li>
+      </random>
+      <button>
+              <text>Booking a session</text>
+              <postback>SHOOT</postback>
+          </button>
+          <button>
+              <text>Visit my instagram profile</text>
+              <url>https://www.instagram.com/_cavins/</url>
+          </button>
+      </template>
+       </category>
+      <category>
+          <pattern>SHOOT</pattern>
+          <template><button>
+              <text>
+              I have an upcoming event and I'd like to book a shoot. What are my options?
+              </text>
+              <postback>BOOK</postback></button>
+              <button>
+              <text>
+              I'd like to get in touch with you
+              </text>
+              <postback>CONTACT</postback></button>
+              </template>
+      </category>
+      <category>
+          <pattern>BOOK</pattern>
+          <template>
+              What type of shoot is it?
+              <button>
+                  <text>Portrait Shoot</text>
+                  <postback>WHAT</postback>
+              </button>
+              <button>
+                  <text>Event</text>
+                  <postback>TYPE</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>WHAT</pattern>
+          <template>
+              <button>
+                  <text>Couples</text>
+                  <postback>RATES</postback>
+              </button>
+              <button>
+                  <text>Architecture</text>
+                  <postback>RATES</postback>
+              </button>
+              <button>
+                  <text>Automotive</text>
+                  <postback>RATES</postback>
+              </button>
+              <button>
+                  <text>Family</text>
+                  <postback>RATES</postback>
+              </button>
+              <button>
+                  <text>Product</text>
+                  <postback>RATES</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>TYPE</pattern>
+          <template>
+              <button>
+                  <text>Birthday</text>
+                  <postback>RATE</postback>
+              </button>
+              <button>
+                  <text>Baby bumps</text>
+                  <postback>RATE</postback>
+              </button>
+              <button>
+                  <text>Graduation</text>
+                  <postback>RATE</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>CONTACT</pattern>
+          <template>You can reach me via Phone call, whatsapp or telegram on 0795085174
+          <button>
+              <text>I'd like to navigate other options</text>
+              <postback>BOOK</postback>
+          </button>
+          </template>
+      </category>
+      <category>
+          <pattern>RATES</pattern>
+          <template>
+              These are the rates
+              <button>
+                  <text>1 hour sessions, 15 editted photos (Individual)     Kshs 3,000</text>
+                  <postback>FEEDBACK</postback>
+              </button>
+              <button>
+                  <text>1 hour sessions, 15 editted photos (Group 2+)     Kshs 4,000</text>
+                  <postback>FEEDBACK</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>RATE</pattern>
+          <template>
+              These are the rates:
+              <button>
+                  <text>Charged per hour    Kshs 3,500</text>
+                  <postback>REACH</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>REACH</pattern>
+          <template>
+              Please reach me on 0795085174 to book your shoot
+              <button>
+                  <text>More...</text>
+                  <postback>FEEDBCAK</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>FEEDBACK</pattern>
+          <template>
+              Did you get what you were looking for?
+              <button>
+                  <text>Yes!</text>
+                  <postback>YES</postback>
+              </button>
+              <button>
+                  <text>No!</text>
+                  <postback>SHOOT</postback>
+              </button>
+          </template>
+      </category>
+      <category>
+          <pattern>YES</pattern>
+          <template>
+              Happy to help😊😊
+          </template>
+      </category>
+      
+  <!--<category>-->
+  <!--    <pattern>My name is * *</pattern>-->
+  <!--    <template>Hello <star index="1"/> How are you Mr.<star index="2"/> </template>-->
+  <!--</category>   -->
+  <!--  <category>-->
+  <!--    <pattern>My name is * *</pattern>-->
+  <!--    <template>Hello <set name="firstname"><star index="1"/> </set><set name="surname"><star index="2"/></set></template>-->
+  <!--</category> -->
+  <!--      <category>-->
+  <!--    <pattern>Test</pattern>-->
+  <!--    <template>-->
+  <!--        <think>-->
+  <!--        <set name="person">-->
+  <!--        <random>-->
+  <!--        <li>Peter. </li>-->
+  <!--        <li>Jane. </li>-->
+  <!--        <li>James. </li>-->
+  <!--        <li>John. </li>-->
+  <!--        <li>Anita. </li>-->
+  <!--        <li>Rachel. </li>-->
+  <!--        <li>Alvaro. </li>-->
+  <!--    </random>-->
+  <!--    </set>-->
+  <!--    </think>-->
+  <!--     The person I chose was <get name="person"/>-->
+  <!--    </template>-->
+  <!--</category>-->
+  
+  <!--<category>-->
+  <!--    <pattern>I ate *</pattern>-->
+  <!--    <template>-->
+  <!--        That sounds yummy-->
+  <!--        <think><set name="food"><star/></set></think>-->
+  <!--        </template>-->
+  <!--</category>-->
+  
+  <!--<category>-->
+  <!--    <pattern>What food do I like</pattern>-->
+  <!--    <template>-->
+  <!--        Well earlier you ate <get name="food"/>, so I assume you like that.-->
+  <!--    </template>-->
+  <!--</category>-->
+  
+  <!--<category>-->
+  <!--    <pattern>Ask me a question</pattern>-->
+  <!--    <template>-->
+  <!--        Do you like the beach?-->
+  <!--    </template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you like the beach</that>-->
+  <!--    <pattern>Yes</pattern>-->
+  <!--    <template>-->
+  <!--        Me too. Its nice to relax on the sand.-->
+  <!--    </template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you like the beach</that>-->
+  <!--    <pattern>No</pattern>-->
+  <!--    <template>Aw! That's a shame. I love the sea.</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <pattern>Ask me another question</pattern>-->
+  <!--    <template>Do you drive a car?</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you drive a car</that>-->
+  <!--    <pattern>No</pattern>-->
+  <!--    <template>Haaa Shaaka🌚</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <pattern>Ask me a question again</pattern>-->
+  <!--    <template>Do you like football</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you like *</that>-->
+  <!--    <pattern>Yes</pattern>-->
+  <!--    <template>That sounds good. What do you like best about <thatstar/>?</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you like *</that>-->
+  <!--    <pattern>no</pattern>-->
+  <!--    <template>Oohh okay. What do you dislike about <thatstar/>?</template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <that>Do you drive a car</that>-->
+  <!--    <pattern>Yes</pattern>-->
+  <!--    <template>Awesome! What car is it?</template>-->
+  <!--</category>-->
+  
+  <!--<category>-->
+  <!--    <pattern>What is my First Name</pattern>-->
+  <!--    <template>Your first name is <get name="firstname"/></template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <pattern>What is my surname</pattern>-->
+  <!--    <template>Your surname is <get name="surname"/></template>-->
+  <!--</category>-->
+  <!--<category>-->
+  <!--    <pattern>What is my name</pattern>-->
+  <!--    <template>Your name is <get name="firstname"/><get name="surname"/></template>-->
+  <!--</category> -->
+  </aiml>
