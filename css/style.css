@@ -1135,12 +1135,22 @@ a {
 #lightgallery .item {
   margin-bottom: 30px; }
   #lightgallery .item img {
+    height: 40rem;
+    object-fit: cover;
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray;
     /* IE5+ */
     -webkit-filter: grayscale(1);
     /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
+
+  #lightgallery .item img.long{
+    height: 35rem;
+    width: 100%;
+  }
+#lightgallery .item img.short{
+  height: 25rem;
+}
   #lightgallery .item:hover img {
     filter: none;
     -webkit-filter: grayscale(0);

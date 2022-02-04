@@ -4,6 +4,8 @@
 }
 .carousel-inner img {
   object-fit: cover;
+    height: 100vh;
+    width: 100vw;
 }
 /* Slideshow container */
 .slideshow-container {
